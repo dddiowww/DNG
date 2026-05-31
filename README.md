@@ -1,5 +1,7 @@
 # Dynamic Neural Graph
 
+![Dynamic Neural Graph overview](imgs/mlp_dng.png)
+
 This repository contains the official implementation for **"Dynamic Neural Graph Encoding of Inference Processes in Deep Weight Space"**.
 
 Dynamic Neural Graph (DNG) represents neural network parameters as graph-structured data and models inference-time information flow in deep weight space. The code includes experiments for INR classification and editing, CNN generalization prediction, CNN Wild Park generalization prediction, and ViT generalization prediction.
