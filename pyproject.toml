@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dng"
+version = "0.1.0"
+description = "Dynamic Neural Graph Encoding of Inference Processes in Deep Weight Space"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "einops>=0.7",
+    "numpy",
+    "pandas",
+    "tqdm",
+    "scipy",
+    "scikit-learn",
+    "opencv-python",
+    "thop",
+    "vit-pytorch",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+pyg = [
+    "torch_geometric",
+]
+
+[tool.setuptools]
+packages = [
+    "data",
+]
+py-modules = [
+    "dng_models",
+    "siren_utils",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
